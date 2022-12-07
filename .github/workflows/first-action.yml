@@ -12,3 +12,8 @@ jobs:
     steps:
       - name: Print message
         run: echo "second job executed"
+  third-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "parallel with first-job"
